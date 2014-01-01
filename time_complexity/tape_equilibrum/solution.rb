@@ -6,7 +6,7 @@ def solution(a)
   a.size.times do |p|
     total_left += a[p]
     total_right -= a[p]
-    diff = (total_left - total_right).abs
+    diff = (total_right - total_left).abs
     result.push(diff)
     result.sort!.pop if result.size > 1  
   end
